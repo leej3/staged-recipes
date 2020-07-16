@@ -1,5 +1,5 @@
 {% set name = "nifti_clib" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,9 @@ package:
 
 source:
   url: https://github.com/NIFTI-Imaging/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 62655d8457bd04ffd80cf2f07fe8c6aac2b8b00a69fbe71f399e3d9623128630
+  sha256: fe6cb1076974df01844f3f4dab1aa844953b3bc1d679126c652975158573d03d
+  # for local testing of the recipe use the following  
+  #   -    git_url: /local/nifti_clib/
 
 build:
   number: 0
